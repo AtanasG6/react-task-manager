@@ -1,15 +1,9 @@
-export function Main({ message, counter, stopIntervalFn }) {
+import { UsersList } from "../users/users-list/UsersList";
 
-    const onClickHandler = () => {
-        stopIntervalFn();
-    }
-
+export function Main() {
     return (
         <div className="main-content">
-            Main works!
-            <br />{message}
-            <br />Counter: {counter}
-            <br /><button onClick={onClickHandler}>Stop interval</button>
+            <UsersList />
         </div>
     )
 }
