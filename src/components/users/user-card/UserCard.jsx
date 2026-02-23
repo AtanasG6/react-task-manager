@@ -1,8 +1,19 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './user_card.scss'
+import { useNavigate } from 'react-router-dom';
 
 export function UserCard({ user }) {
+    const navigate = useNavigate();
+
+    const redirectToDetails = () => {
+        navigate(`/user/${user.id}`);
+    }
+
+    if (!user) {
+        return <p>No User!</p>;
+    }
+
     return (
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={user.picture} />
@@ -23,6 +34,7 @@ export function UserCard({ user }) {
                 <div className='btn-holder'>
                     <Button variant="primary">Edit</Button>
                     <Button variant="danger">Delete</Button>
+                    <Button variant='info' onClick={redirectToDetails}>Details</Button>
                 </div>
             </Card.Body>
         </Card>
