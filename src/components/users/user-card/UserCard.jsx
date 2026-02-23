@@ -1,16 +1,30 @@
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import './user_card.scss'
+
 export function UserCard({ user }) {
     return (
-        <div className="user-card">
-            <div className="card-header">
-                <h4>Atanas Gyulchev</h4>
-            </div>
-            <div className="card-body">
-                <img src="ahaha.png" alt="user-image" />
-            </div>
-            <div className="card-footer">
-                <button className="edit-btn">Edit</button>
-                <button className="delete-btn">Delete</button>
-            </div>
-        </div>
+        <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src='https://picsum.photos/200/300?random=1' />
+            <Card.Body>
+                <Card.Title>User Name</Card.Title>
+                <Card.Text>
+                    <span className='key'>Address:</span>
+                    <span className='value'>User Address</span>
+                </Card.Text>
+                <Card.Text>
+                    <span className='key'>Email:</span>
+                    <span className='value'>User Email</span>
+                </Card.Text>
+                <Card.Text>
+                    <span className='key'>Phone:</span>
+                    <span className='value'>User Phone</span>
+                </Card.Text>
+                <div className='btn-holder'>
+                    <Button variant="primary">Edit</Button>
+                    <Button variant="danger">Delete</Button>
+                </div>
+            </Card.Body>
+        </Card>
     )
 }
