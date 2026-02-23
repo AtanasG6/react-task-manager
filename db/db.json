@@ -1,76 +1,66 @@
 {
-    "users": [
-        {
-            "id": "417386bd-cb45-487f-b8c1-170f0594d935",
-            "isActive": false,
-            "picture": "https://picsum.photos/200/300?random=1",
-            "age": 35,
-            "name": "Deloris Carney",
-            "email": "deloriscarney@volax.com",
-            "phone": "+1 (996) 480-2974",
-            "address": "106 Thatford Avenue, Helen, Nevada, 7281"
-        },
-        {
-            "id": "feccfa0b-c1b6-44b8-9b55-fe19341c6294",
-            "isActive": false,
-            "picture": "https://picsum.photos/200/300?random=2",
-            "age": 20,
-            "name": "Le Hester",
-            "email": "lehester@volax.com",
-            "phone": "+1 (850) 412-2505",
-            "address": "247 Post Court, Biddle, South Dakota, 745"
-        },
-        {
-            "id": "0011a255-2047-4d26-bd1f-9992354a2a4a",
-            "isActive": false,
-            "picture": "https://picsum.photos/200/300?random=3",
-            "age": 35,
-            "name": "Barry Carson",
-            "email": "barrycarson@volax.com",
-            "phone": "+1 (801) 504-2216",
-            "address": "522 Grattan Street, Deseret, Arkansas, 584"
-        },
-        {
-            "id": "cb58d30c-9c0c-470c-b3da-510cd1ae6408",
-            "isActive": true,
-            "picture": "https://picsum.photos/200/300?random=4",
-            "age": 39,
-            "name": "Pacheco Myers",
-            "email": "pachecomyers@volax.com",
-            "phone": "+1 (883) 450-2725",
-            "address": "259 Grove Place, Otranto, Utah, 8317"
-        },
-        {
-            "id": "f73c25a6-78b7-4177-a388-2e92f9f9c467",
-            "isActive": false,
-            "picture": "https://picsum.photos/200/300?random=5",
-            "age": 39,
-            "name": "Carson Hodge",
-            "email": "carsonhodge@volax.com",
-            "phone": "+1 (902) 580-2674",
-            "address": "346 Eldert Street, Ripley, Wyoming, 1177"
-        },
-        {
-            "id": "dce98689-032f-4628-af2a-8cafa7a6db32",
-            "isActive": true,
-            "picture": "https://picsum.photos/200/300?random=6",
-            "age": 30,
-            "name": "Warner Mckee",
-            "email": "warnermckee@volax.com",
-            "phone": "+1 (997) 435-3009",
-            "address": "386 Powers Street, Connerton, Iowa, 1011"
-        },
-        {
-            "id": "f946a738-93eb-4fe6-8349-6d821a62f22d",
-            "isActive": false,
-            "picture": "https://picsum.photos/200/300?random=7",
-            "age": 24,
-            "name": "Shaw Sloan",
-            "email": "shawsloan@volax.com",
-            "phone": "+1 (913) 569-3721",
-            "address": "704 Sullivan Place, Veyo, California, 3329"
-        }
-    ],
-    "tasks": [],
-    "status": []
+  "users": [
+    {
+      "id": "feccfa0b-c1b6-44b8-9b55-fe19341c6294",
+      "isActive": false,
+      "picture": "https://picsum.photos/200/300?random=2",
+      "age": 20,
+      "name": "Le Hester",
+      "email": "lehester@volax.com",
+      "phone": "+1 (850) 412-2505",
+      "address": "247 Post Court, Biddle, South Dakota, 745"
+    },
+    {
+      "id": "0011a255-2047-4d26-bd1f-9992354a2a4a",
+      "isActive": false,
+      "picture": "https://picsum.photos/200/300?random=3",
+      "age": 35,
+      "name": "Barry Carson",
+      "email": "barrycarson@volax.com",
+      "phone": "+1 (801) 504-2216",
+      "address": "522 Grattan Street, Deseret, Arkansas, 584"
+    },
+    {
+      "id": "cb58d30c-9c0c-470c-b3da-510cd1ae6408",
+      "isActive": true,
+      "picture": "https://picsum.photos/200/300?random=4",
+      "age": 39,
+      "name": "Pacheco Myers",
+      "email": "pachecomyers@volax.com",
+      "phone": "+1 (883) 450-2725",
+      "address": "259 Grove Place, Otranto, Utah, 8317"
+    },
+    {
+      "id": "f73c25a6-78b7-4177-a388-2e92f9f9c467",
+      "isActive": false,
+      "picture": "https://picsum.photos/200/300?random=5",
+      "age": 39,
+      "name": "Carson Hodge",
+      "email": "carsonhodge@volax.com",
+      "phone": "+1 (902) 580-2674",
+      "address": "346 Eldert Street, Ripley, Wyoming, 1177"
+    },
+    {
+      "id": "dce98689-032f-4628-af2a-8cafa7a6db32",
+      "isActive": true,
+      "picture": "https://picsum.photos/200/300?random=6",
+      "age": 30,
+      "name": "Warner Mckee",
+      "email": "warnermckee@volax.com",
+      "phone": "+1 (997) 435-3009",
+      "address": "386 Powers Street, Connerton, Iowa, 1011"
+    },
+    {
+      "id": "f946a738-93eb-4fe6-8349-6d821a62f22d",
+      "isActive": false,
+      "picture": "https://picsum.photos/200/300?random=7",
+      "age": 24,
+      "name": "Shaw Sloan",
+      "email": "shawsloan@volax.com",
+      "phone": "+1 (913) 569-3721",
+      "address": "704 Sullivan Place, Veyo, California, 3329"
+    }
+  ],
+  "tasks": [],
+  "status": []
 }
