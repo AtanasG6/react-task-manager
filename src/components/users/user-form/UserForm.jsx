@@ -1,5 +1,6 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import './user_form.scss'
 //   "isActive": false,
 //   "picture": "https://picsum.photos/200/300?random=2",
 //   "age": 20,
@@ -13,20 +14,34 @@ export function UserForm() {
         <div className="user-form-wrapper">
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                    </Form.Text>
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control type="text" placeholder="Enter name" />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control type="email" placeholder="Enter email" />
                 </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Picture</Form.Label>
+                    <Form.Control type="text" placeholder="Enter picture URL" />
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Phone</Form.Label>
+                    <Form.Control type="tel" placeholder="Enter phone number" />
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Address</Form.Label>
+                    <Form.Control type="text" placeholder="Enter address" />
+                </Form.Group>
+
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
+                    <Form.Check type="checkbox" label="Active" />
                 </Form.Group>
+
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
