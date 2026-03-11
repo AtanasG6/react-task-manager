@@ -10,6 +10,10 @@ export function UserCard({ user, deleteUser }) {
         navigate(`/user/${user.id}`);
     }
 
+    const redirectToEdit = () => {
+        navigate(`/user/edit/${user.id}`);
+    }
+
     if (!user) {
         return <p>No User!</p>;
     }
@@ -32,7 +36,7 @@ export function UserCard({ user, deleteUser }) {
                     <span className='value'>{user.phone}</span>
                 </Card.Text>
                 <div className='btn-holder'>
-                    <Button variant="primary">Edit</Button>
+                    <Button variant="primary" onClick={redirectToEdit}>Edit</Button>
                     <Button variant="danger" onClick={() => deleteUser(user.id)}>Delete</Button>
                     <Button variant='info' onClick={redirectToDetails}>Details</Button>
                 </div>

@@ -17,9 +17,13 @@ export function deleteUser(id) {
     return axios.delete(`${apiUrl}/${id}`);
 }
 
-export function createUser(user) {
-    if(!user.picture)
+export function saveUser(user) {
+    if (!user.picture)
         user.picture = `https://picsum.photos/200/300?random=${Math.random()}`;
+
+    if (user.id) {
+        return axios.put(`${apiUrl}/${user.id}`, user);
+    }
 
     return axios.post(apiUrl, user);
 }

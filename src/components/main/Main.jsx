@@ -10,6 +10,7 @@ export function Main() {
                 <Route path="/users-list" element={<UsersList />} />
                 <Route path="/user/:id" element={<User />} />
                 <Route path="/user/create" element={<UserForm />} />
+                <Route path="/user/edit/:id" element={<UserForm />} />
             </Routes>
         </div>
     )
