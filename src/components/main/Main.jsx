@@ -1,6 +1,7 @@
 import { UsersList } from "../users/users-list/UsersList";
 import { User } from "../users/user/User";
 import { Route, Routes } from "react-router-dom";
+import { UserForm } from "../users/user-form/UserForm";
 
 export function Main() {
     return (
@@ -8,6 +9,7 @@ export function Main() {
             <Routes>
                 <Route path="/users-list" element={<UsersList />} />
                 <Route path="/user/:id" element={<User />} />
+                <Route path="/user/create" element={<UserForm />} />
             </Routes>
         </div>
     )

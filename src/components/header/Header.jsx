@@ -14,6 +14,7 @@ export function Header() {
                     <Nav className="me-auto">
                         <Link className='nav-link' to="/users-list">Users List</Link>
                         <Link className='nav-link' to="/tasks-list">Tasks List</Link>
+                        <Link className='nav-link' to="/user/create">Create User</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
