@@ -35,10 +35,16 @@ export function UserForm() {
     }
 
     const onInputChange = (event) => {
+        let value = event.target.value;
+
+        if (event.target.name === 'isActive') {
+            value = event.target.checked;
+        }
+
         setUser(prevState => {
             return {
                 ...prevState,
-                [event.target.name]: event.target.value
+                [event.target.name]: value
             }
         })
     }
