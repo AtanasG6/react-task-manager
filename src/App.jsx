@@ -6,14 +6,15 @@ import { User } from './components/users/user/User'
 import { UserForm } from './components/users/user-form/UserForm'
 import Login from './components/auth/login/Login'
 import { AuthenticatedRoute } from './utils/guards/AuthenticatedRoute'
+import { NonAuthenticatedGuard } from './utils/guards/NonAuthenticatedGuard'
 
 
 function App() {
   return (
     <>
       <Routes>
-        <Route exact path='/register' element={<Register />} />
-        <Route exact path='/login' element={<Login />} />
+        <Route exact path='/register' element={<NonAuthenticatedGuard><Register /></NonAuthenticatedGuard>} />
+        <Route exact path='/login' element={<NonAuthenticatedRoute><Login /></NonAuthenticatedRoute>} />
         <Route exact path='/' element={<AuthenticatedRoute><Layout /></AuthenticatedRoute>} >
           <Route path="/users-list" element={<UsersList />} />
           <Route path="/user/:id" element={<User />} />
