@@ -21,16 +21,6 @@
       "address": "522 Grattan Street, Deseret, Arkansas, 584"
     },
     {
-      "id": "cb58d30c-9c0c-470c-b3da-510cd1ae6408",
-      "isActive": true,
-      "picture": "https://picsum.photos/200/300?random=4",
-      "age": 39,
-      "name": "Pacheco Myers",
-      "email": "pachecomyers@volax.com",
-      "phone": "+1 (883) 450-2725",
-      "address": "259 Grove Place, Otranto, Utah, 8317"
-    },
-    {
       "id": "f73c25a6-78b7-4177-a388-2e92f9f9c467",
       "isActive": false,
       "picture": "https://picsum.photos/200/300?random=5",
@@ -49,25 +39,6 @@
       "email": "warnermckee@volax.com",
       "phone": "+1 (997) 435-3009",
       "address": "386 Powers Street, Connerton, Iowa, 1011"
-    },
-    {
-      "id": "f946a738-93eb-4fe6-8349-6d821a62f22d",
-      "isActive": false,
-      "picture": "https://picsum.photos/200/300?random=7",
-      "age": 24,
-      "name": "Shaw Sloan",
-      "email": "shawsloan@volax.com",
-      "phone": "+1 (913) 569-3721",
-      "address": "704 Sullivan Place, Veyo, California, 3329"
-    },
-    {
-      "id": "089c",
-      "isActive": "on",
-      "name": "Atanas Gyulchev",
-      "email": "gyulchev@mail.com",
-      "picture": "https://picsum.photos/200/300?random=0.6155833746324364",
-      "phone": "123456789",
-      "address": "address"
     }
   ],
   "tasks": [],

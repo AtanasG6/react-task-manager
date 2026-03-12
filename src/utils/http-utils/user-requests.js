@@ -13,6 +13,11 @@ export function getUserById(id) {
     return axios.get(`${apiUrl}/${id}`);
 }
 
+async function getUserByEmail(email) {
+    const response = await axios.get(`${apiUrl}?email=${email}`);
+    return response.data[0];
+}
+
 export function deleteUser(id) {
     return axios.delete(`${apiUrl}/${id}`);
 }
@@ -26,4 +31,15 @@ export function saveUser(user) {
     }
 
     return axios.post(apiUrl, user);
+}
+
+export async function registerUser(user) {
+    const existingUser = await getUserByEmail(user.email);
+
+    if (existingUser) {
+        throw new Error('User with this email already exists');
+    }
+
+    // Here we already have some validation logic
+    return saveUser(user);
 }

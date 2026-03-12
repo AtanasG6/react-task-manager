@@ -27,6 +27,7 @@ export function UserForm() {
     }, [params.id]);
 
     const onFormSubmit = (event) => {
+        // We don't want the form to submit
         event.preventDefault();
         saveUser(user)
             .then(() => {
@@ -44,6 +45,7 @@ export function UserForm() {
         setUser(prevState => {
             return {
                 ...prevState,
+                // Only update the property that has changed
                 [event.target.name]: value
             }
         })
