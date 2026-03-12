@@ -39,6 +39,16 @@
       "email": "warnermckee@volax.com",
       "phone": "+1 (997) 435-3009",
       "address": "386 Powers Street, Connerton, Iowa, 1011"
+    },
+    {
+      "id": "a5ff",
+      "isActive": false,
+      "name": "Atanas",
+      "email": "atanas@example.com",
+      "picture": "https://picsum.photos/200/300?random=0.3351586852515045",
+      "phone": "123456789",
+      "address": "Some address",
+      "password": "1234"
     }
   ],
   "tasks": [],
