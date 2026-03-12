@@ -5,6 +5,7 @@ import { UsersList } from './components/users/users-list/UsersList'
 import { User } from './components/users/user/User'
 import { UserForm } from './components/users/user-form/UserForm'
 import Login from './components/auth/login/Login'
+import { AuthenticatedRoute } from './utils/guards/AuthenticatedRoute'
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       <Routes>
         <Route exact path='/register' element={<Register />} />
         <Route exact path='/login' element={<Login />} />
-        <Route exact path='/' element={<Layout />} >
+        <Route exact path='/' element={<AuthenticatedRoute><Layout /></AuthenticatedRoute>} >
           <Route path="/users-list" element={<UsersList />} />
           <Route path="/user/:id" element={<User />} />
           <Route path="/user/create" element={<UserForm />} />

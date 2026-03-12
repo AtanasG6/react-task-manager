@@ -1,14 +1,12 @@
-import { useNavigate } from "react-router-dom"
+import { Navigate } from "react-router-dom"
 import { getLoggedUser } from "../http-utils/user-requests";
 
-export function AuthenticatedRoute(props) {
-  const navigate = useNavigate();
+export function AuthenticatedRoute({children}) {
   const user = getLoggedUser();
 
   if (!user) {
-    navigate('/login')
-    return;
+    return <Navigate to='/login' />;
   }
 
-  return <props.element {...props} />;
+  return children;
 }
